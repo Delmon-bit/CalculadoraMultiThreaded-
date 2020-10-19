@@ -1,0 +1,31 @@
+TITULO DO PROJETO: Calculadora Multithread, Protocolo TCP/IP
+AUTOR: Delmon Neto
+DATA: 18/10/2020
+
+Protocolo TCP/IP para calculadora com clientes multithread: 4 operações básicas e 3 especias. IDE usada: Geany
+Há 5 arquivos fontes: CalculadoraJavaClient.java, ServidorSocket.java, ServidorSocketII.java, GerenciadorDeClientesI.java e GerenciadorDeClientesII.java
+Interface do cliente: CalculadoraJavaClient  
+2 servidores locais iniciados ao cliente: ServidorSocket e ServidorSocketII. 
+
+Ambos os servidores criam mais de uma thread e remetem os dados aos seus respectivos gerenciadores:
+ServidorSockete de GerenciadorDeClientesI (operações básicas)
+ServidorSocketeII de GerenciadorDeClientesII (operações especiais)
+As expressões em Strings são tratadas, covertidas para float e operadas nos gerenciadores. 
+Os resultados são enviados aos clientes (CalculadoraJavaClient) também em forma de texto. 
+ 
+
+OBJETIVO DO PROJETO 
+O cliente digitará uma das 7 expressões matemáticas do projeto(soma, subtração, divisão, produto, porcentagem, raiz e potência), 
+que será enviada para o servidor responsável pela operação e enviará o resultado. Ainda não está perfeito. Então, aproveitem para melhorá-lo. :)
+
+COMO INICIAR O PROJETO 
+Compilar todos os arquivos. Rode os dois servidores: "ServidorSocket" e "ServidorSocketII". Em seguida, rode o cliente "CalculadoraJavaClient".
+
+INSTRUÇÕES PARA O USUÁRIO:
+O cliente escolhe primeiro entre as opções: 1 (operações básicas, ServidorSocket ) e 2 (operações especiais, ServidorSocketII). O programa 
+encerra ao digitar "sair", ainda nessa opção. Escolhendo a opção 1 ou 2, preencher o campo seguindo o critério: numero1,operação,numero2 (sem vírgula.Junto ou Separado) 
+e teclar enter. Todas as entradas são no formaro String: ao digitar "sair" nesta etapa, também é finalizado.
+Para o projeto funcionar corretamente, seguir os exemplos:
+Oerações básicas: adição(4som2 = 6), subtração(4sub2 = 2), divisão(4div2 = 2), produto(4pro2 = 8), 
+Oerações especiais: porcentagem(20por100 = 20), raiz(27rai3 = 3) e potenciação(2pot3 = 8 ). 
+
